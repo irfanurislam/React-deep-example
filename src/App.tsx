@@ -4,6 +4,7 @@ import MainLayout from "./components/layout/MainLayout";
 import Button from "./components/ui/Button";
 import Container from "./components/ui/Container";
 import Modal from "./components/ui/Modal";
+import NormalForm from "./components/NormalForm/NormalForm";
 // import { MenuItem, MenuList } from "./components/Menu";
 // import UsersContainer from "./components/UsersContainer";
 // import Select from "./components/select";
@@ -11,15 +12,16 @@ import Modal from "./components/ui/Modal";
 // import Profile from "./pages/hooksPages/Profile";
 
 function App() {
-  const [modal, setModal] = useState(false);
+  // const [modal, setModal] = useState(false);
 
-  const handleModalClose = () => {
-    setModal((prev) => !prev);
-  };
+  // const handleModalClose = () => {
+  //   setModal((prev) => !prev);
+  // };
 
   return (
     <>
       <div className="">
+        {/* <Container> */}
         {/* old gula practice 
         <Profile></Profile>
         <GameResult></GameResult>
@@ -38,7 +40,7 @@ function App() {
 
         {/* <MainLayout></MainLayout> */}
 
-        {/* <Container>
+        {/* 
           <h2>new content main</h2>
           <h2>new content main</h2>
           <h2>new content main</h2>
@@ -47,13 +49,13 @@ function App() {
 
           <button className="btn btn-primary"> this btn</button>
           
-        </Container> */}
-        <button
+      */}
+        {/* <button
           onClick={() => setModal((prev) => !prev)}
           className="btn btn-danger "
         >
           click me
-        </button>
+        </button> 
         <Modal isOpen={modal} onClose={handleModalClose}>
           <Modal.Header>
             <h1 className="text-2xl">this is model title</h1>
@@ -65,7 +67,9 @@ function App() {
           </p>
         </Modal>
 
-        <Button className="bg-green-400"></Button>
+        <Button className="bg-green-400"></Button>*/}
+        <NormalForm></NormalForm>
+        {/* </Container> */}
       </div>
     </>
   );

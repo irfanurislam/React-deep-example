@@ -1,8 +1,8 @@
 import { twMerge } from "tailwind-merge";
-const Button = ({ className }: any) => {
+const Button = ({ className, children }: any) => {
   return (
     <div>
-      <button className={twMerge(`bg-red-400 ${className}`)}>trigger</button>
+      <button className={twMerge(`bg-red-400 ${className}`)}>{children}</button>
     </div>
   );
 };
